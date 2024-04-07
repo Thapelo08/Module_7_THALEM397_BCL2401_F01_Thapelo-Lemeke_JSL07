@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
   
-      // 🚨 Generate certificate content dynamically
+      
+  
+  
+  // 🚨 Generate certificate content dynamically
       certificateContent.innerHTML = `
       <h2>Certificate of Achievemnt</h2>
  <p> This is to certify that</p>
@@ -44,17 +47,17 @@ document.addEventListener('DOMContentLoaded', function () {
       personalMessageInput.value = '';
       if(courseNameInput) courseNameInput.value = '';
     });
-  
-    //  🚨 Close the modal when the close button is clicked
-    closeModal.addEventListener("click", function () {
-      modal.style.display = "none";
-    });
+      
+      //  🚨 Close the modal when the close button is clicked
+      closeModal.addEventListener("click", function () {
+       modal.style.display = "none"; 
+      });
     
     //Close the modal when the user cluicks outside of it
     window.addEventListener("click", function (e) {
       if (e.target == modal) {
-        modal.style.display = "none;"
+        modal.style.display = "none";
       }
-    })
+    });
   });
   
